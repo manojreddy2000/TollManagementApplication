@@ -5,9 +5,120 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding:20px
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.AddVehicleEntry{
+  border-color:cornflowerblue;
+  background-color: cadetblue;
+
+}
+.custom-button {
+  background-color:cornflowerblue;
+  color:white;
+  min-height: 25px;
+  border: none;
+  border-radius: 4px;
+  padding:5px 10px
+}
+.table-header {
+  width:20%;
+  background-color:#e0e0e0;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 10px;
+}
+.table-data {
+  width:20%;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.model-sub-component{
+  background-color: white;
+  min-width: 400px;
+  min-height: 250px;
+  padding: 35px;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.input{
+  min-height: 35px;
+  border-radius: 4px;
+  border: 1px solid #bdb5b5;
+  margin-top: 5px;
+  padding: 0px 10px;
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  background-color:red;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 5px 16px;
+  position: fixed;
+  border-radius: 4px;
+  z-index: 1;
+  left: 1%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
 }
